@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html"><img class="logo" src="images/logo-min.png"></a> 
+        <button id="menu-toggle"><i class="fa-solid fa-bars"></i></button>
+        <ul id="menu">
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Events</a></li>
+            <li><a href="#">Contact</a></li>
+            <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+        </ul>
+    </nav>
+    
+    <section class="hero"> 
+        <div class="hero-image"></div>
+        <div class="hero-items">
+            <h1>Monigram Coffee Roasters</h1>
+            <p>At Monigram we offer a variety of seasonal coffees from Latin America, Africa, and abroad.<br> These coffees fall into two categories: Core & Fringe.<br>
+                Core represents our signature espresso and rich morning coffees, the tried and true crowd-pleasers.<br>
+                Fringe represents those brighter coffees that spark curiosity and speak to the adventurous. <br>
+                Any and all available in 340g retail bags, whole bean or ground to suit.</p>
+        </div>
+    </section>
+
+    <div id="featured-products">
+        <!--dynamically created conytent-->
+    </div>
+
+    <div class="shop-button">
+        <a href="shop.html">
+            <button class="button">Shop Coffee</button>
+        </a>
+    </div>
+
+    <section class="about">
+        <div class="about-section">
+            <h2>Created By Monica & Graham</h2>
+            <p>Established in 2012 by Monica & Graham Braun, 
+                Monigram Coffee Roasters is proud to be part of Cambridge's growing and established small business community. 
+                With a sincere passion for coffee and determination to build community spirit in the city we live in, 
+                we decided to take a chance and become coffee roasters after leaving the corporate world.</p>
+        </div>
+    </section>
+
+    <div class="subscribe-wrapper">
+        <div class="container">
+            <div class="subscribe-box">
+                <h3>Join the Monigram Community</h3>
+                <p>Stay connected & in the know with exclusive emails from Monigram Coffee Roasters</p>
+                <form>
+                    <input type="email" placeholder="Type your email here">
+                    <button>submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <section class="footer">
+        <div class="footer-content">
+            <img src="images/logo-min.png">
+
+        </div>
+
+        <div class="footer-content">
+            <h4>Shop</h4>
+            <li><a href="#">Gifts</a></li>
+            <li><a href="#">Subscriptions</a></li>
+            <li><a href="#">Coffee</a></li>
+            <li><a href="#">Not Coffee</a></li>
+            <li><a href="#">Gear</a></li>
+        </div>
+
+        <div class="footer-content">
+            <h4>Explore</h4>
+            <li><a href="#">Our Story</a></li>
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </div>
+
+        <div class="footer-content">
+            <h4>Policies</h4>
+            <li><a href="#">Return Policy</a></li>
+            <li><a href="#">Shipping Policy</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Wholesale Terms & Conditions</a></li>
+        </div>
+        
+    </section>
+    
+
+
+
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/contentful@latest/dist/contentful.browser.min.js"></script>
+<script src="./js/script.js"></script>
+</html>

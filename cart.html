@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <nav>
+        <a href="index.html"><img class="logo" src="images/logo-min.png"></a> 
+        <button id="menu-toggle"><i class="fa-solid fa-bars"></i></button>
+        <ul id="menu">
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Events</a></li>
+            <li><a href="#">Contact</a></li>
+            <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+        </ul>
+    </nav>
+
+    <section class="checkout">
+        <div class="cart-container">
+            <header>Your Cart</header>
+
+            <div id="cart-product">
+                <!--dynamically created conytent-->
+            </div>
+    
+            <form action="#">
+                <div class="form first">
+                    <div class="details personal">
+                        <span class="title">Personal Details</span>
+    
+                        <div class="fields">
+                            <div class="input-field">
+                                <label>Full Name</label>
+                                <input type="text" placeholder="Enter your name" required>
+                            </div>
+    
+                            <div class="input-field">
+                                <label>Email</label>
+                                <input type="text" placeholder="Enter your email" required>
+                            </div>
+    
+                            <div class="input-field">
+                                <label>Phone Number</label>
+                                <input type="number" placeholder="Enter your number" required>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="details payment">
+                        <span class="title">Payment</span>
+    
+                        <div class="fields">
+                            <div class="input-field">
+                                <label>Name on card</label>
+                                <input type="text" placeholder="Enter your card name" required>
+                            </div>
+    
+                            <div class="input-field">
+                                <label>Card Number</label>
+                                <input type="number" placeholder="Enter your card number" required>
+                            </div>
+    
+                            <div class="input-field">
+                                <label>Expiration Date</label>
+                                <input type="date" placeholder="Enter the date" required>
+                            </div>
+
+                            <div class="input-field">
+                                <label>Security Code</label>
+                                <input type="number" placeholder="Enter your security code" required>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="details delivery">
+                        <span class="title">Delivery</span>
+    
+                        <div class="fields">
+                            <div class="input-field">
+                                <label>Shipping</label>
+                                <input type="text" placeholder="yes/no" required>
+                            </div>
+    
+                            <div class="input-field">
+                                <label>Full Name</label>
+                                <input type="text" placeholder="Enter your name" required>
+                            </div>
+
+                            <div class="input-field">
+                                <label>Country</label>
+                                <input type="text" placeholder="Enter your country" required>
+                            </div>
+
+                            <div class="input-field">
+                                <label>Address</label>
+                                <input type="text" placeholder="Enter your address" required>
+                            </div>
+
+                            <div class="input-field">
+                                <label>City</label>
+                                <input type="text" placeholder="Enter your city" required>
+                            </div>
+
+                            <div class="input-field">
+                                <label>Province</label>
+                                <input type="text" placeholder="Enter your province" required>
+                            </div>
+
+                            <div class="input-field">
+                                <label>Postal Code</label>
+                                <input type="text" placeholder="Enter your postal code" required>
+                            </div>
+                        </div>
+
+                        <button class="submit">
+                            <span class="btnText">Submit</span>
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <section class="footer">
+        <div class="footer-content">
+            <img src="images/logo-min.png">
+
+        </div>
+
+        <div class="footer-content">
+            <h4>Shop</h4>
+            <li><a href="#">Gifts</a></li>
+            <li><a href="#">Subscriptions</a></li>
+            <li><a href="#">Coffee</a></li>
+            <li><a href="#">Not Coffee</a></li>
+            <li><a href="#">Gear</a></li>
+        </div>
+
+        <div class="footer-content">
+            <h4>Explore</h4>
+            <li><a href="#">Our Story</a></li>
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </div>
+
+        <div class="footer-content">
+            <h4>Policies</h4>
+            <li><a href="#">Return Policy</a></li>
+            <li><a href="#">Shipping Policy</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Wholesale Terms & Conditions</a></li>
+        </div>
+        
+    </section>
+    
+</body>
+<script src="https://cdn.jsdelivr.net/npm/contentful@latest/dist/contentful.browser.min.js"></script>
+<script src="./js/cart.js"></script>
+</html>
